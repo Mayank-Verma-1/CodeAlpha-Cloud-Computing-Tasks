@@ -1,0 +1,98 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "is anyone there", "hey there", "howdy"],
+      "responses": ["Hi there! Welcome to TechNest Support -- how can I help you today?", "Hello! What can I help you with?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "talk to you later", "that's all thanks", "no that's all"],
+      "responses": ["Thanks for chatting with TechNest! Have a great day.", "Goodbye! Reach out anytime you need us."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that helps", "appreciate it", "thanks a lot"],
+      "responses": ["You're welcome!", "Happy to help!"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "where is my order", "track my order", "order status", "has my order shipped",
+        "when will my package arrive", "check order tracking", "my order hasn't arrived"
+      ],
+      "responses": [
+        "You can track your order anytime from 'My Orders' in your account, or share your order number and I'll look it up.",
+        "I can check that for you -- what's your order number?"
+      ]
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": [
+        "how long does shipping take", "shipping cost", "do you ship internationally",
+        "delivery time", "how much is shipping", "when will it be delivered"
+      ],
+      "responses": [
+        "Standard shipping takes 3-5 business days and is free on orders over $50. Express shipping (1-2 days) is available at checkout.",
+        "We ship worldwide! Delivery time depends on your location, typically 3-10 business days for international orders."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "what is your return policy", "can i return this", "how do i get a refund",
+        "return an item", "refund policy", "exchange a product", "i want my money back"
+      ],
+      "responses": [
+        "You can return most items within 30 days of delivery for a full refund. Just start a return from your order history.",
+        "Refunds are processed within 5-7 business days once we receive your return. Want me to start that for you?"
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "what payment methods do you accept", "can i pay with paypal", "do you take credit cards",
+        "payment options", "can i pay in installments", "is klarna available", "klarna checkout",
+        "do you accept apple pay"
+      ],
+      "responses": [
+        "We accept all major credit/debit cards, PayPal, and Apple Pay. Installment plans are available at checkout via Klarna."
+      ]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "what are your hours", "when are you open", "store hours", "are you open now",
+        "when is customer support available", "what time do you close", "when do you close",
+        "is support open right now", "support availability"
+      ],
+      "responses": [
+        "Our online store is open 24/7! Live agents are available Mon-Fri, 9am-6pm EST."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "is this in stock", "do you have this in stock", "when will it be back in stock",
+        "is the item available", "out of stock"
+      ],
+      "responses": [
+        "I can check stock for you -- what's the product name or SKU?",
+        "Let me know which item you're after and I'll check current availability."
+      ]
+    },
+    {
+      "tag": "human_handoff",
+      "patterns": [
+        "talk to a human", "speak to an agent", "i want a real person", "connect me to support",
+        "this isn't helping", "human please", "get me a person", "real agent on the line",
+        "this bot isn't working for me", "live agent please"
+      ],
+      "responses": ["Of course -- connecting you with a live support agent now. Please hold on."]
+    }
+  ],
+  "fallback_responses": [
+    "I'm not totally sure about that one -- could you rephrase, or I can connect you with a human agent?",
+    "Sorry, I didn't quite catch that. Could you try asking a different way?"
+  ]
+}
